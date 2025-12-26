@@ -1,8 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import { useCodeEditorStore } from '@/src/store/useCodeEditorStore';
-import { AlertTriangle, CheckCircle, Clock, Copy, Terminal } from 'lucide-react';
-import RunningCodeSkeleton from './RunningCodeSkeleton';
 
 export default function OutputPanel() {
   const {output, error, isRunning} = useCodeEditorStore();
