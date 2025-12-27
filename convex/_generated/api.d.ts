@@ -8,6 +8,7 @@
  * @module
  */
 
+import type * as codeExecution from "../codeExecution.js";
 import type * as http from "../http.js";
 import type * as snippets from "../snippets.js";
 import type * as users from "../users.js";
@@ -27,6 +28,7 @@ import type {
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  codeExecution: typeof codeExecution;
   http: typeof http;
   snippets: typeof snippets;
   users: typeof users;
